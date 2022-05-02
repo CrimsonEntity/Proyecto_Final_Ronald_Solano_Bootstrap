@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase #8: Helpers</title>
+</head>
+
+
+<body class="bg-dark text-light">
+
+    
+    <header class="mb-5 clearfix">
+        <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand border rounded border border-light bg-opacity-50 bold" style="background-color: #e3f2fd;" href="#">Proyectos Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Proyectos</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Proyecto 1
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="clase3.html">Clase: Grid y Breakpoints</a></li>
+                                <li><a class="dropdown-item" href="clase4.html">Clase: Columnas y Gutters</a></li>
+                                <li><a class="dropdown-item" href="clase5.html">Clase: Reboot e Imagenes</a></li>
+                                <li><a class="dropdown-item" href="clase6.html">Clase: Tablas</a></li>
+                                <li><a class="dropdown-item" href="clase7.html">Clase: Formularios</a></li>
+                                <li><a class="dropdown-item" href="clase9.html">Clase: Utilidades</a></li>
+                            </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyectofinal.html">Proyecto Final</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-5">
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-10">
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- Helpers/Ayudas -->
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Helpers/Ayudas</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Clearfix -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Clearfix</h1>
+                <p>Limpia contenido flotante de manera rápida y fácil con la clase de .clearfix.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container clearfix">
+            <p class="text-success">Ejemplo de .clearfix.</p>
+            <div class="col-11 border border-success">
+                <div class="bg-info clearfix m-2">
+                    <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+                    <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+                </div>
+                <p class="m-2">No aparece el texto entre los botones, sino que aparece justo debajo.</p>
+            </div>
+        </div>  
+    </section>
+
+
+    <!-- Links Coloreados -->
+    <section>
+        <div class="container mt-4">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Links coloreados</h1>
+                <p>Colorea links y le agrega estados hover</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container clearfix">
+            <p class="text-success">Ejemplo de links coloreados.</p>
+            <div class="col-11 border border-success">              
+                <a href="#" class="link-primary m-2">Primary link</a>
+                <a href="#" class="link-secondary m-2">Secondary link</a>
+                <a href="#" class="link-success m-2">Success link</a>
+                <a href="#" class="link-danger m-2">Danger link</a>
+                <a href="#" class="link-warning m-2">Warning link</a>
+                <a href="#" class="link-info m-2">Info link</a>
+                <a href="#" class="link-light m-2">Light link</a>
+                <a href="#" class="link-dark m-2">Dark link</a>
+            </div>
+        </div>  
+    </section>
+
+
+    <!-- Ratios -->
+    <section>
+        <div class="container mt-4">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Ratios</h1>
+                <p>Usa pseudo elementos generados para hacer que un elemento mantenha el aspecto de relación que se escoge.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container clearfix">
+            <p class="text-success">Ejemplo de modificaciones que hace el Ratio a las imagenes.</p>
+            <div class="col-11 border border-success">              
+                <div class="ratio ratio-1x1 border border-2 border-ligth m-2">
+                    <img src="asserts/ratio.jpg" alt="Prueba Ratio">
+                  </div>
+                  <div class="ratio ratio-4x3 border border-2 border-ligth m-2">
+                    <img src="asserts/ratio.jpg" alt="Prueba Ratio">
+                  </div>
+                  <div class="ratio ratio-16x9 border border-2 border-ligth m-2">
+                    <img src="asserts/ratio.jpg" alt="Prueba Ratio">
+                  </div>
+                  <div class="ratio ratio-21x9 border border-2 border-ligth m-2">
+                    <img src="asserts/ratio.jpg" alt="Prueba Ratio">
+                </div>
+            </div>
+        </div>  
+    </section>
+
+
+    <section>
+        <div class="container mt-4">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Posiciones</h1>
+                <p>Se utilizan estas ayudas para configurar rápidamente la posicion de un elemento.</p>
+                <p>Se pueden utilizar varias clases para realizar esta función:</p>
+                <ol>
+                    <li>Fijar Arriba: .fixed-top.</li>
+                    <li>Fijar en el fondo: .fixed-bottom.</li>
+                    <li>Pegajoso en el tope: .sticky-top.</li>
+                    <li>Pegajoso en el tope responsive: .sticky-(breakpoint)-top.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pilas -->
+    <section>
+        <div class="container mt-4">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Pilas</h1>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Pilas Verticales</h3>
+                <p>Utilizando la clase .vstack</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="vstack gap-3 m-2 text-dark">
+                    <div class="bg-light border">First item</div>
+                    <div class="bg-light border">Second item</div>
+                    <div class="bg-light border">Third item</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Pilas Horizontales</h3>
+                <p>Utilizando la clase .hstack</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="hstack gap-3 m-2 text-dark border border-ligth">
+                    <div class="bg-light border">First item</div>
+                    <div class="bg-light border">Second item</div>
+                    <div class="bg-light border">Third item</div>
+                </div>
+
+                <div class="hstack gap-3 m-2 text-dark border border-ligth">
+                    <div class="bg-light border">First item</div>
+                    <div class="bg-light border ms-auto">Second item</div>
+                    <div class="bg-light border">Third item</div>
+                </div>
+
+                <div class="hstack gap-3 m-2 text-dark border border-ligth">
+                    <div class="bg-light border">First item</div>
+                    <div class="bg-light border ms-auto">Second item</div>
+                    <div class="vr"></div>
+                    <div class="bg-light border">Third item</div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Escondites Visuales -->
+    <section>
+        <div class="container mt-4">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Escondites Visuales</h1>
+                <p>Se utiliza esta ayuda para esconder visualmente un elemento, pero manteniendolo accesible para tecnologías de asistencia.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section>
+        <div class="container clearfix">
+            <p class="text-success">Ejemplo de Escondite visual sin aplicar.</p>
+            <div class="col-11 border border-success">   
+                <h2 class="m-2">Title for screen readers</h2>
+                <a class="m-2" href="#content">Skip to main content</a>
+                <div class="m-2">A container with a <a href="#">focusable element</a>.</div>
+            </div>
+        </div>  
+    </section>
+
+
+    <section>
+        <div class="container clearfix">
+            <p class="text-success">Ejemplo de Escondite visual sin aplicar.</p>
+            <div class="col-11 border border-success">   
+                <h2 class="visually-hidden">Title for screen readers</h2>
+                <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+                <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a>.</div>
+            </div>
+        </div>  
+    </section>
+
+    <!-- Enlaces estirados -->
+    <section>
+        <div class="container mt-4">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Enlaces estirados</h1>
+                <p>Hace que el elemento HTML o el componente de Bootstrap sea anidado en un conjunto más grande.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section>
+        <div class="container clearfix">
+            <p class="text-success">Ejemplo de Enlaces estirados.</p>
+            <div class="col-11 border border-success">   
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="asserts/stretch1.png" class="card-img-top" alt="stretch">
+                    <div class="card-body bg-secundary text-dark">
+                      <h5 class="card-title">Card with stretched link</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section>
+        <div class="container clearfix">
+            <p class="text-success">Ejemplo de componentes modificados con Enlaces estirados.</p>
+            <div class="col-11 border border-success">     
+                <div class="d-flex position-relative m-2">
+                    <img src="asserts/stretch.gif" class="flex-shrink-0 me-3" alt="ghoul">
+                    <div>
+                      <h5 class="mt-0">Custom component with stretched link</h5>
+                      <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                      <a href="#" class="stretched-link">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+
+    <!-- Texto Truncado -->
+    <section>
+        <div class="container mt-4">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Texto Truncado</h1>
+                <p>Trunca una línea de texto muy larga con una elipsis.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section>
+        <div class="container clearfix">
+            <p class="text-success">Ejemplo de Texto Truncado.</p>
+            <div class="col-11 border border-success">            
+                <!-- Block level -->
+                <div class="row">
+                    <div class="col-2 text-truncate">
+                        This text is quite long, and will be truncated once displayed.
+                    </div>
+                </div> 
+                <!-- Inline level -->
+                <span class="d-inline-block text-truncate" style="max-width: 150px;">
+                    This text is quite long, and will be truncated once displayed.
+                </span>
+            </div>
+        </div>  
+    </section>
+
+
+    <!-- Reglas Verticales -->
+    <section>
+        <div class="container mt-4">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Reglas Verticales</h1>
+                <p>Usa la ayuda de regla vertical para dividir elementos.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section>
+        <div class="container clearfix">
+            <p class="text-success">Ejemplo de Reglas Verticales.</p>
+            <div class="col-11 border border-success bg-secundary">            
+                <div class="vr border border-ligth m-2"></div>
+
+                <div class="d-flex border border-ligth m-2" style="height: 200px;">
+                    <div class="vr-light"></div>
+                </div>
+
+                <div class="hstack gap-3 border border-ligth m-2 text-dark">
+                    <div class="bg-warning text-light border border-2 border-warning">First item</div>
+                    <div class="bg-warning text-light border border-2 border-warning ms-auto">Second item</div>
+                    <div class="vr"></div>
+                    <div class="bg-warning text-light border border-2 border-warning">Third item</div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    
+    <footer class="row bg-success mt-5">
+        <div class="col-5">
+          <p class="ms-5">Ronald Humberto Solano Gutiérrez</p>
+        </div>
+        <div class="col-5">
+        </div>
+        <div class="col-2">
+          2022
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

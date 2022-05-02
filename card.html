@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase #3: Grid y Breakpoints</title>
+</head>
+
+
+<body class="bg-dark text-light">
+  
+  <header class="mb-5 clearfix">
+    <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand border rounded border border-light bg-opacity-50 bold" style="background-color: #e3f2fd;" href="#">Proyectos Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Proyectos</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Proyecto 1
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="clase4.html">Clase: Columnas y Gutters</a></li>
+                  <li><a class="dropdown-item" href="clase5.html">Clase: Reboot e Imagenes</a></li>
+                  <li><a class="dropdown-item" href="clase6.html">Clase: Tablas</a></li>
+                  <li><a class="dropdown-item" href="clase7.html">Clase: Formularios</a></li>
+                  <li><a class="dropdown-item" href="clase8.html">Clase: Helpers</a></li>
+                  <li><a class="dropdown-item" href="clase9.html">Clase: Utilidades</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="proyectofinal.html">Proyecto Final</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="mt-5">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-10">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  <!-- Presentación Cards -->
+  <section>
+    <div class="container mt-5">
+        <div class="row justify-content-start">
+          <div class="col-10">
+            <h1 class="text-primary">Cards</h1>
+            <p>Las cartas de Bootstrap proveen contenedores felxibles y extendibles de contenido con múltiples variantes y opciones.</p>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Ejemplos de Cards -->
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success">
+              <div class="card m-2 text-dark" style="width: 18rem;">
+                <img src="asserts/stretch.gif" class="card-img-top" alt="prueba">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <section>
+      <div class="container clearfix">
+          <div class="col-11 border border-success">
+            <div class="card m-2 text-dark" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">List Group</h3>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success">
+          <div class="card m-2 text-dark" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Kitchen sink</h3>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success">
+          <div class="card m-2 text-dark" style="width: 18rem;">
+            <img src="asserts/stretch.gif" class="card-img-top" alt="prueba-1">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Header and footer</h3>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success">
+          <div class="card m-2 text-dark">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success">
+          <div class="card text-center m-2 text-dark">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Horizontal</h3>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success">
+          <div class="card mb-3 m-2 text-dark" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="asserts/stretch.gif" class="img-fluid rounded-start" alt="prueba 2">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Card styles</h3>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Background and colors</h3>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success">
+          <div class="card text-white bg-primary mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Secondary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-white bg-success mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Success card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-white bg-danger mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Danger card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-dark bg-warning mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Warning card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-dark bg-info mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Info card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-dark bg-light mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-white bg-dark mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Border</h3>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success">
+          <div class="card border-primary border-3 mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-primary">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card border-secondary border-3 mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-secondary">
+              <h5 class="card-title">Secondary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card border-success border-3 mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-success">
+              <h5 class="card-title">Success card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card border-danger border-3 mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-danger">
+              <h5 class="card-title">Danger card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card border-warning border-3 mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Warning card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card border-info border-3 mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Info card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card border-light border-3 mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card border-dark border-3 mb-3 m-2 text-dark" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-dark">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Grid Cards</h3>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card m-2 text-dark">
+                <img src="asserts/stretch.gif" class="card-img-top" alt="prueba-2">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card m-2 text-dark">
+                <img src="asserts/stretch.gif" class="card-img-top" alt="prueba-3">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card m-2 text-dark">
+                <img src="asserts/stretch.gif" class="card-img-top" alt="prueba-4">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card m-2 text-dark">
+                <img src="asserts/stretch.gif" class="card-img-top" alt="prueba-5">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+
+
+  <footer class="row bg-success mt-5">
+      <div class="col-5">
+        <p class="ms-5">Ronald Humberto Solano Gutiérrez</p>
+      </div>
+      <div class="col-5">
+      </div>
+      <div class="col-2">
+        2022
+      </div>
+  </footer>
+
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

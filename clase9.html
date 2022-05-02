@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase #8: Utilidades</title>
+</head>
+
+
+<body class="bg-dark text-light">
+
+    
+    <header class="mb-5 clearfix">
+        <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand border rounded border border-light bg-opacity-50 bold" style="background-color: #e3f2fd;" href="#">Proyectos Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Proyectos</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Proyecto 1
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="clase3.html">Clase: Grid y Breakpoints</a></li>
+                                <li><a class="dropdown-item" href="clase4.html">Clase: Columnas y Gutters</a></li>
+                                <li><a class="dropdown-item" href="clase5.html">Clase: Reboot e Imagenes</a></li>
+                                <li><a class="dropdown-item" href="clase6.html">Clase: Tablas</a></li>
+                                <li><a class="dropdown-item" href="clase7.html">Clase: Formularios</a></li>
+                                <li><a class="dropdown-item" href="clase8.html">Clase: Helpers</a></li>
+                            </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyectofinal.html">Proyecto Final</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-5">
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-10">
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+    <!-- Utilidades -->
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Utilidades</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Background -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Background</h1>
+                <p>Se puede agregar un fondo a la paágina y decorarlo con variantes.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Colores de fondo</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="p-3 mb-2 m-2 bg-primary text-white">.bg-primary</div>
+                <div class="p-3 mb-2 m-2 bg-secondary text-white">.bg-secondary</div>
+                <div class="p-3 mb-2 m-2 bg-success text-white">.bg-success</div>
+                <div class="p-3 mb-2 m-2 bg-danger text-white">.bg-danger</div>
+                <div class="p-3 mb-2 m-2 bg-warning text-dark">.bg-warning</div>
+                <div class="p-3 mb-2 m-2 bg-info text-dark">.bg-info</div>
+                <div class="p-3 mb-2 m-2 bg-light text-dark">.bg-light</div>
+                <div class="p-3 mb-2 m-2 bg-dark text-white">.bg-dark</div>
+                <div class="p-3 mb-2 m-2 bg-body text-dark">.bg-body</div>
+                <div class="p-3 mb-2 m-2 bg-white text-dark">.bg-white</div>
+                <div class="p-3 mb-2 m-2 bg-transparent text-light">.bg-transparent</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Colores de fondo con gradiente</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="p-3 mb-2 m-2 bg-primary bg-gradient text-white">.bg-primary</div>
+                <div class="p-3 mb-2 m-2 bg-secondary bg-gradient text-white">.bg-secondary</div>
+                <div class="p-3 mb-2 m-2 bg-success bg-gradient text-white">.bg-success</div>
+                <div class="p-3 mb-2 m-2 bg-danger bg-gradient text-white">.bg-danger</div>
+                <div class="p-3 mb-2 m-2 bg-warning bg-gradient text-dark">.bg-warning</div>
+                <div class="p-3 mb-2 m-2 bg-info bg-gradient text-dark">.bg-info</div>
+                <div class="p-3 mb-2 m-2 bg-light bg-gradient text-dark">.bg-light</div>
+                <div class="p-3 mb-2 m-2 bg-dark bg-gradient text-white">.bg-dark</div>
+                <div class="p-3 mb-2 m-2 bg-body bg-gradient text-dark">.bg-body</div>
+                <div class="p-3 mb-2 m-2 bg-white bg-gradient text-dark">.bg-white</div>
+                <div class="p-3 mb-2 m-2 bg-transparent bg-gradient text-light">.bg-transparent</div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Opacidad de colores de fond</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="bg-success p-2 text-white">This is default success background</div>
+                <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
+                <div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
+                <div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
+                <div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bordes -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Bordes</h1>
+                <p>Con la utilidad de bordes se le puede dar estilo rápidamente a los elementos.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Borde Aditivo</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="row m-2">
+                    <div class="col border-0 m-2">
+                      Columna
+                    </div>
+                    <div class="col border-top border-2 border-danger m-2">
+                      Columna
+                    </div>
+                    <div class="col border-end border-2 border-danger m-2">
+                      Columna
+                    </div>
+                    <div class="col border-bottom border-2 border-danger m-2">
+                      Columna
+                    </div>
+                    <div class="col border-start border-2 border-danger m-2">
+                      Columna
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Borde Aditivo</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="row m-2">
+                    <div class="col border border-primary m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-secondary m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-success m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-danger m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-warning m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-info m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-dark m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-white m-2">
+                      Columna
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ancho de Borde</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="row m-2">
+                    <div class="col border border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-2 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-3 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-4 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border border-5 border-light m-2">
+                      Columna
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Radio del Borde</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="row m-2">
+                    <div class="col border rounded border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border rounded-top border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border rounded-end border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border rounded-bottom border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border rounded-start border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border rounded-circle border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border rounded-pill border-1 border-light m-2">
+                      Columna
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Tamaño del radio del Borde</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="row m-2">
+                    <div class="col border rounded-0 border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border rounded-1 border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border rounded-2 border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col border rounded-3 border-1 border-light m-2">
+                      Columna
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Colores -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Colores</h1>
+                <p>Se puede convinar la utilidad .color con una gran variedad de clases.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplo de Colores</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <p class="text-primary m-2">.text-primary</p>
+                <p class="text-secondary m-2">.text-secondary</p>
+                <p class="text-success m-2">.text-success</p>
+                <p class="text-danger m-2">.text-danger</p>
+                <p class="text-warning bg-dark m-2">.text-warning</p>
+                <p class="text-info bg-dark m-2">.text-info</p>
+                <p class="text-light bg-dark m-2">.text-light</p>
+                <p class="text-dark bg-light m-2">.text-dark</p>
+                <p class="text-body bg-light m-2">.text-body</p>
+                <p class="text-muted m-2">.text-muted</p>
+                <p class="text-white bg-dark m-2">.text-white</p>
+                <p class="text-black-50 m-2">.text-black-50</p>
+                <p class="text-white-50 bg-dark m-2">.text-white-50</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplo de opacidad en los Colores</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="text-primary">This is default primary text</div>
+                <div class="text-primary text-opacity-75 m-2">This is 75% opacity primary text</div>
+                <div class="text-primary text-opacity-50 m-2">This is 50% opacity primary text</div>
+                <div class="text-primary text-opacity-25 m-2">This is 25% opacity primary text</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Flotante -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Flotante</h1>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplo de Flotante</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">              
+                <div class="float-start m-2">Float start on all viewport sizes</div><br>
+                <div class="float-end m-2">Float end on all viewport sizes</div><br>
+                <div class="float-none m-2">Don't float on all viewport sizes</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplo de Flotante Responsives</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">              
+                <div class="float-sm-start m-2">Float start on viewports sized SM (small) or wider</div><br>
+                <div class="float-md-start m-2">Float start on viewports sized MD (medium) or wider</div><br>
+                <div class="float-lg-start m-2">Float start on viewports sized LG (large) or wider</div><br>
+                <div class="float-xl-start m-2">Float start on viewports sized XL (extra-large) or wider</div><br>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Interacciones -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Interacciones</h1>
+                <p>Clase de utilida que permite cambiar cómo los usuarios interactuan con el contenido de la página web.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplo de Selección de texto</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">              
+                <p class="user-select-all m-2">This paragraph will be entirely selected when clicked by the user.</p>
+                <p class="user-select-auto m-2">This paragraph has default select behavior.</p>
+                <p class="user-select-none m-2">This paragraph will not be selectable when clicked by the user.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplo de Eventos del puntero</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">              
+                <p><a href="#" class="pe-none m-2" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
+                <p><a href="#" class="pe-auto m-2">This link</a> can be clicked (this is default behavior).</p>
+                <p class="pe-none m-2"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Opacidad -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Opacidad</h1>
+                <p>Controla la opacidad de un elemento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="row m-2">
+                    <div class="col bg-info opacity-100 border rounded-0 border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col bg-info opacity-75 border rounded-1 border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col bg-info opacity-50 border rounded-2 border-1 border-light m-2">
+                      Columna
+                    </div>
+                    <div class="col bg-info opacity-25 border rounded-3 border-1 border-light m-2">
+                      Columna
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sobrevista -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Sobrevista</h1>
+                <p>Esta utilidad permite modificar como se observa el contenido en elementos con sobrevista.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="row m-2">
+                    <div class="col overflow-auto border border-1 border-light m-2">
+                        Columna ejemplo de como se puede usar la clase de sobrevista/overflow. Repito es un ejemplo de como se puede usar la clase de sobrevista/overflow.
+                    </div>
+                    <div class="col overflow-hidden border border-1 border-light m-2">
+                        Columna ejemplo de como se puede usar la clase de sobrevista/overflow. Repito es un ejemplo de como se puede usar la clase de sobrevista/overflow.
+                    </div>
+                    <div class="col overflow-visible border border-1 border-light m-2">
+                        Columna ejemplo de como se puede usar la clase de sobrevista/overflow. Repito es un ejemplo de como se puede usar la clase de sobrevista/overflow.
+                    </div>
+                    <div class="col overflow-scroll border border-1 border-light m-2">
+                        Columna ejemplo de como se puede usar la clase de sobrevista/overflow. Repito es un ejemplo de como se puede usar la clase de sobrevista/overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Posiciones -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Posiciones</h1>
+                <p>Se utiliza esta clase para configurar rápidamente la posición de un elemento.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplo de elementos con posicionamiento</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">              
+                <div class="position-relative">
+                    <div class="position-relative m-4">
+                        <div class="progress" style="height: 1px;">
+                          <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+                        <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+                        <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">              
+                <button type="button" class="btn btn-primary position-relative m-2 ">
+                    Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+                  </button>
+                  
+                  <button type="button" class="btn btn-dark position-relative m-2 ">
+                    Marker <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#212529" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+                  </button>
+                  
+                  <button type="button" class="btn btn-primary position-relative m-2">
+                    Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sombras -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Sombras</h1>
+                <p>Agrega y remueve sombras a los elementos con el uso de esta utilidad.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplo de uso de sombras</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success bg-light">              
+                <div class="shadow-none p-3 mb-5 bg-light rounded border border-dark text-dark">No shadow</div>
+                <div class="shadow-sm p-3 mb-5 bg-body rounded border border-dark text-dark">Small shadow</div>
+                <div class="shadow p-3 mb-5 bg-body rounded border border-dark text-dark">Regular shadow</div>
+                <div class="shadow-lg p-3 mb-5 bg-body rounded border border-dark text-dark">Larger shadow</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tamaño -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Tamaño</h1>
+                <p>Se puede fácilmente hacer un elemento tan ancho o alto como se quiera sin el uso de las utilidades .width y -height.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de Tamaños</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <div class="w-25 p-3 text-dark border m-2" style="background-color: #eee;">Width 25%</div>
+                <div class="w-50 p-3 text-dark border m-2" style="background-color: #eee;">Width 50%</div>
+                <div class="w-75 p-3 text-dark border m-2" style="background-color: #eee;">Width 75%</div>
+                <div class="w-100 p-3 text-dark border m-2" style="background-color: #eee;">Width 100%</div>
+                <div class="w-auto p-3 text-dark border m-2" style="background-color: #eee;">Width auto</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+                    <div class="h-25 d-inline-block text-light border m-2" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+                    <div class="h-50 d-inline-block text-light border m-2" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+                    <div class="h-75 d-inline-block text-light border m-2" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+                    <div class="h-100 d-inline-block text-light border m-2" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+                    <div class="h-auto d-inline-block text-light border m-2" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <div style="height: 100px; background-color: rgba(255,0,0,.1);">
+                    <div class="mh-100 text-light border m-2" style="width: 100px; height: 200px; background-color: rgba(0,0,255,.1);">Max-height 100%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Texto -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Texto</h1>
+                <p>Utilidades comunes como controlar el alineamiento, envoltura, grosor, etc.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de alineamiento de texto</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <p class="text-start m-2">Start aligned text on all viewport sizes.</p>
+                <p class="text-center m-2">Center aligned text on all viewport sizes.</p>
+                <p class="text-end m-2">End aligned text on all viewport sizes.</p>
+
+                <p class="text-sm-start m-2">Start aligned text on viewports sized SM (small) or wider.</p>
+                <p class="text-md-start m-2">Start aligned text on viewports sized MD (medium) or wider.</p>
+                <p class="text-lg-start m-2">Start aligned text on viewports sized LG (large) or wider.</p>
+                <p class="text-xl-start m-2">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de envoltura de texto y sobreflujo</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <div class="badge bg-primary text-wrap m-2" style="width: 6rem;">
+                    This text should wrap.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <div class="text-nowrap bd-highlight m-2" style="width: 8rem;">
+                    This text should overflow the parent.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de ruptura de texto</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <p class="text-break m-2">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de Transformación de texto</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <p class="text-lowercase m-2">Lowercased text.</p>
+                <p class="text-uppercase m-2">Uppercased text.</p>
+                <p class="text-capitalize m-2">CapiTaliZed text.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de Tamaños de fuente</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <p class="fs-1 m-2">.fs-1 text</p>
+                <p class="fs-2 m-2">.fs-2 text</p>
+                <p class="fs-3 m-2">.fs-3 text</p>
+                <p class="fs-4 m-2">.fs-4 text</p>
+                <p class="fs-5 m-2">.fs-5 text</p>
+                <p class="fs-6 m-2">.fs-6 text</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de grosor de fuente e itelica</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <p class="fw-bold m-2">Bold text.</p>
+                <p class="fw-bolder m-2">Bolder weight text (relative to the parent element).</p>
+                <p class="fw-normal m-2">Normal weight text.</p>
+                <p class="fw-light m-2">Light weight text.</p>
+                <p class="fw-lighter m-2">Lighter weight text (relative to the parent element).</p>
+                <p class="fst-italic m-2">Italic text.</p>
+                <p class="fst-normal m-2">Text with normal font style</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de separación de líneas de texto</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <p class="lh-1 m-2">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                <p class="lh-sm m-2">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                <p class="lh-base m-2">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                <p class="lh-lg m-2">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de espacio único</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">
+                <p class="font-monospace m-2">This is in monospace</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de reseteo de color</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">
+                <p class="text-muted m-2">
+                    Muted text with a <a href="#" class="text-reset">reset link</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de Decoración de textos</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">
+                <p class="text-decoration-underline m-2">This text has a line underneath it.</p>
+                <p class="text-decoration-line-through m-2">This text has a line going through it.</p>
+                <a href="#" class="text-decoration-none m-2">This link has its text decoration removed</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Alineamiento vertical -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Alineamiento vertical</h1>
+                <p>Se puede cambiar fácilmente el alineamiento vertical de los elementos gracias a las utilidades de bootstrap.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Ejemplos de uso de Alineamiento vertical en elemento en linea y en celdas</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <span class="align-baseline">baseline</span>
+                <span class="align-top">top</span>
+                <span class="align-middle">middle</span>
+                <span class="align-bottom">bottom</span>
+                <span class="align-text-top">text-top</span>
+                <span class="align-text-bottom">text-bottom</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">              
+                <table style="height: 100px;">
+                    <tbody>
+                      <tr>
+                        <td class="align-baseline">baseline</td>
+                        <td class="align-top">top</td>
+                        <td class="align-middle">middle</td>
+                        <td class="align-bottom">bottom</td>
+                        <td class="align-text-top">text-top</td>
+                        <td class="align-text-bottom">text-bottom</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Visibilidad -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Visibilidad</h1>
+                <p>Controla la visibilidad de los elementos sin modificar la clase display con las utilidades de visibilidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-2">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Se utilizan las clases .visible e .invisible según la necesidad.</h3>
+            </div>
+        </div>
+    </section> 
+
+    
+    <footer class="row bg-success mt-5">
+        <div class="col-5">
+          <p class="ms-5">Ronald Humberto Solano Gutiérrez</p>
+        </div>
+        <div class="col-5">
+        </div>
+        <div class="col-2">
+          2022
+        </div>
+    </footer>
+
+
+    
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

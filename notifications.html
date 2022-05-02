@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase #3: Grid y Breakpoints</title>
+</head>
+
+
+<body class="bg-dark text-light">
+  
+  <header class="mb-5 clearfix">
+    <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand border rounded border border-light bg-opacity-50 bold" style="background-color: #e3f2fd;" href="#">Proyectos Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Proyectos</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Proyecto 1
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="clase4.html">Clase: Columnas y Gutters</a></li>
+                  <li><a class="dropdown-item" href="clase5.html">Clase: Reboot e Imagenes</a></li>
+                  <li><a class="dropdown-item" href="clase6.html">Clase: Tablas</a></li>
+                  <li><a class="dropdown-item" href="clase7.html">Clase: Formularios</a></li>
+                  <li><a class="dropdown-item" href="clase8.html">Clase: Helpers</a></li>
+                  <li><a class="dropdown-item" href="clase9.html">Clase: Utilidades</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="proyectofinal.html">Proyecto Final</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="mt-5">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-10">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  <!-- Presentación Notifications -->
+  <section>
+    <div class="container mt-5">
+        <div class="row justify-content-start">
+          <div class="col-10">
+            <h1 class="text-primary">Notifications</h1>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5">
+        <div class="row justify-content-start">
+          <div class="col-10">
+            <h1 class="text-primary">Badge</h1>
+            <p>Documentacion y ejemplos para medallas y componentes de etiquetas.</p>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Ejemplos de Badge -->
+
+  <section>
+      <div class="container mt-2">
+          <div class="row justify-content-start">
+            <div class="col-11">
+              <h3 class="text-success">Headings</h3>
+          </div>
+      </div>
+  </section>
+
+
+  <section>
+      <div class="container clearfix">
+          <div class="col-11 border border-success"> 
+            <h1 class="m-2">Example heading <span class="badge bg-secondary m-2">New</span></h1>
+            <h2 class="m-2">Example heading <span class="badge bg-secondary m-2">New</span></h2>
+            <h3 class="m-2">Example heading <span class="badge bg-secondary m-2">New</span></h3>
+            <h4 class="m-2">Example heading <span class="badge bg-secondary m-2">New</span></h4>
+            <h5 class="m-2">Example heading <span class="badge bg-secondary m-2">New</span></h5>
+            <h6 class="m-2">Example heading <span class="badge bg-secondary m-2">New</span></h6>
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Buttons</h3>
+        </div>
+    </div>
+  </section>
+
+
+  <section>
+      <div class="container clearfix">
+          <div class="col-11 border border-success"> 
+            <button type="button" class="btn btn-primary m-2">
+              Notifications <span class="badge bg-secondary">4</span>
+            </button>
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Positioned</h3>
+        </div>
+    </div>
+  </section>
+
+
+  <section>
+      <div class="container clearfix">
+          <div class="col-11 border border-success"> 
+            <button type="button" class="btn btn-primary position-relative m-3">
+              Inbox
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success"> 
+          <button type="button" class="btn btn-primary position-relative m-3">
+            Profile
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Background colors</h3>
+        </div>
+    </div>
+  </section>
+
+
+  <section>
+      <div class="container clearfix">
+          <div class="col-11 border border-success"> 
+            <span class="badge bg-primary m-2">Primary</span>
+            <span class="badge bg-secondary m-2">Secondary</span>
+            <span class="badge bg-success m-2">Success</span>
+            <span class="badge bg-danger m-2">Danger</span>
+            <span class="badge bg-warning text-dark m-2">Warning</span>
+            <span class="badge bg-info text-dark m-2">Info</span>
+            <span class="badge bg-light text-dark m-2">Light</span>
+            <span class="badge bg-dark m-2">Dark</span>
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Pill badges</h3>
+        </div>
+    </div>
+  </section>
+
+
+  <section>
+      <div class="container clearfix">
+          <div class="col-11 border border-success"> 
+            <span class="badge rounded-pill bg-primary m-2">Primary</span>
+            <span class="badge rounded-pill bg-secondary m-2">Secondary</span>
+            <span class="badge rounded-pill bg-success m-2">Success</span>
+            <span class="badge rounded-pill bg-danger m-2">Danger</span>
+            <span class="badge rounded-pill bg-warning text-dark m-2">Warning</span>
+            <span class="badge rounded-pill bg-info text-dark m-2">Info</span>
+            <span class="badge rounded-pill bg-light text-dark m-2">Light</span>
+            <span class="badge rounded-pill bg-dark m-2">Dark</span>
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container mt-5">
+        <div class="row justify-content-start">
+          <div class="col-10">
+            <h1 class="text-primary">Spinnerss</h1>
+            <p>Documentacion y ejemplos para medallas y componentes de etiquetas.</p>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Ejemplos de Badge -->
+
+  <section>
+      <div class="container mt-2">
+          <div class="row justify-content-start">
+            <div class="col-11">
+              <h3 class="text-success">Border spinner</h3>
+          </div>
+      </div>
+  </section>
+
+
+  <section>
+      <div class="container clearfix">
+          <div class="col-11 border border-success"> 
+            <div class="spinner-border m-2" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Colors</h3>
+        </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success"> 
+          <div class="spinner-border text-primary m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-secondary m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-success m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-danger m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-warning m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-info m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-light m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-border text-dark m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Growing spinner</h3>
+        </div>
+    </div>
+  </section>
+
+
+  <section>
+      <div class="container clearfix">
+          <div class="col-11 border border-success"> 
+            <div class="spinner-grow m-2" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success"> 
+          <div class="spinner-grow text-primary m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-secondary m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-success m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-danger m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-warning m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-info m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-light m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-dark m-2" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+        <div class="row justify-content-start">
+          <div class="col-11">
+            <h3 class="text-success">Buttons</h3>
+        </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success"> 
+          <button class="btn btn-primary m-2" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>
+          </button>
+          <button class="btn btn-primary m-2" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container clearfix">
+        <div class="col-11 border border-success"> 
+          <button class="btn btn-primary m-2" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>
+          </button>
+          <button class="btn btn-primary m-2" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+        </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <footer class="row bg-success mt-5">
+      <div class="col-5">
+        <p class="ms-5">Ronald Humberto Solano Gutiérrez</p>
+      </div>
+      <div class="col-5">
+      </div>
+      <div class="col-2">
+        2022
+      </div>
+  </footer>
+
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase #6: Tablas</title>
+</head>
+
+
+<body class="bg-dark text-light">
+
+    
+    <header class="mb-5 clearfix">
+        <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand border rounded border border-light bg-opacity-50 bold" style="background-color: #e3f2fd;" href="#">Proyectos Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Proyectos</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Proyecto 1
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="clase3.html">Clase: Grid y Breakpoints</a></li>
+                                <li><a class="dropdown-item" href="clase4.html">Clase: Columnas y Gutters</a></li>
+                                <li><a class="dropdown-item" href="clase5.html">Clase: Reboot e Imagenes</a></li>
+                                <li><a class="dropdown-item" href="clase7.html">Clase: Formularios</a></li>
+                                <li><a class="dropdown-item" href="clase8.html">Clase: Helpers</a></li>
+                                <li><a class="dropdown-item" href="clase9.html">Clase: Utilidades</a></li>
+                            </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyectofinal.html">Proyecto Final</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-5">
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-10">
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+    <!-- Presentación Tablas -->
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Tablas</h1>
+                <p>Se mostrará como darle estilos a las tablas por medio de las clases de Bootstrap.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Ejemplos de Reboot -->
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <table class="table text-light">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Variantes en las tablas</h3>
+                <p>Se usan clases contextuales para darle color a las tablas, a las filas y a los elementos.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <table class="table table-primary">
+                    <thead>
+                      <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td class="table-warning">@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td class="table-warning">@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td class="table-warning">@twitter</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Tablas Acentuadas</h3>
+                <p>Se usa la clase .table-striped para darle un estilo de zebra a las filas de la tabla. Además se le pueden sumar variantes de colores.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">                
+                <table class="table table-dark table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Tablas con filas con acciones de cursor</h3>
+                <p>Se usa la clase .table-hover para darle un estilo distinto a las filas por las que pasa el cursor del raton.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">                               
+                <table class="table table-sucess table-hover text-light">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Bordes de Tablas.</h3>
+                <p>Se puede generar un borde a todos los lados y celdas de las tablas con la clase .table-bordered.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">                               
+                <table class="table table-bordered text-light">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Modificación de los colores de los bordes de Tablas.</h3>
+                <p>Bootstrap da la opción de modificar el color de los bordes de las tablas usando la clase .border-(color).</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">                               
+                <table class="table table-bordered border-warning text-light">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Tablas sin bordes.</h3>
+                <p>Bootstrap da la opción de eliminar todos los bordes de una tabla usando la clase .table-borderless.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">                                
+                <table class="table table-borderless text-light">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Alineamiento vertical.</h3>
+                <p>Se pueden hacer tablas responsive que se alinien verticalmente usando la clase .table-responsive y se puede alinear el texto en la vertical utilizando las clases .align-middle, .align-bottom y .align-top.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="table-responsive">
+                    <table class="table align-middle text-light">
+                        <thead>
+                          <tr class="align-bottom">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="align-bottom">
+                            <th scope="row">1</th>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis auctor dui, eu porttitor ipsum suscipit non. Proin id felis id risus efficitur commodo. Donec et arcu ante. Donec vel interdum magna, et pretium risus.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis auctor dui, eu porttitor ipsum suscipit non. Proin id felis id risus efficitur commodo. Donec et arcu ante. Donec vel interdum magna, et pretium risus.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis auctor dui, eu porttitor ipsum suscipit non. Proin id felis id risus efficitur commodo. Donec et arcu ante. Donec vel interdum magna, et pretium risus.</td>
+                          </tr>
+                          <tr class="align-bottom">
+                            <th scope="row">2</th>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis auctor dui, eu porttitor ipsum suscipit non. Proin id felis id risus efficitur commodo. Donec et arcu ante. Donec vel interdum magna, et pretium risus.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis auctor dui, eu porttitor ipsum suscipit non. Proin id felis id risus efficitur commodo. Donec et arcu ante. Donec vel interdum magna, et pretium risus.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis auctor dui, eu porttitor ipsum suscipit non. Proin id felis id risus efficitur commodo. Donec et arcu ante. Donec vel interdum magna, et pretium risus.</td>
+                          </tr>
+                          <tr class="align-bottom">
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis auctor dui, eu porttitor ipsum suscipit non. Proin id felis id risus efficitur commodo. Donec et arcu ante. Donec vel interdum magna, et pretium risus.</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Encabezado y pie de pagina de tablas.</h3>
+                <p>Se le puede asignar un color o acción especifica a los encabezados y a los pies de página de las tablas.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Subtítulo de tablas.</h3>
+                <p>Se puede generar un título que se encuentre al final de la tabla con información importante. Esto por medio de las etiquetas caption. A su vez, se puede colocar este subtítulo en la parte superior de la tabla utilizando la clase .caption-top.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">                                
+                <table class="table table-bordered table-info">
+                    <caption>Lista de usuarios</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Tablas responsive.</h3>
+                <p>Para generar tablas que sean siempre responsive se debe usar la clase .table-responsive, la cual generara un scroll horizontal.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">                                
+                <div class="table-responsive">
+                    <table class="table text-light">
+                        <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Tablas responsive con Breakpoint específico.</h3>
+                <p>Se pueden generar tablas responsive con un breakpoint en específico utilizando la clase .table-responsive-(breakpoint).</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">                                
+                <div class="table-responsive-md">
+                    <table class="table text-light">
+                        <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                              <th scope="col">Heading</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                              <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                                <td>Cell</td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="row bg-success mt-5">
+        <div class="col-5">
+          <p class="ms-5">Ronald Humberto Solano Gutiérrez</p>
+        </div>
+        <div class="col-5">
+        </div>
+        <div class="col-2">
+          2022
+        </div>
+    </footer>
+
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

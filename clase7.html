@@ -1,0 +1,2227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase #7:Formularios</title>
+</head>
+
+
+<body class="bg-dark text-light">
+
+    
+    <header class="mb-5 clearfix">
+        <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand border rounded border border-light bg-opacity-50 bold" style="background-color: #e3f2fd;" href="#">Proyectos Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Proyectos</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Proyecto 1
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="clase3.html">Clase: Grid y Breakpoints</a></li>
+                                <li><a class="dropdown-item" href="clase4.html">Clase: Columnas y Gutters</a></li>
+                                <li><a class="dropdown-item" href="clase5.html">Clase: Reboot e Imagenes</a></li>
+                                <li><a class="dropdown-item" href="clase6.html">Clase: Tablas</a></li>
+                                <li><a class="dropdown-item" href="clase8.html">Clase: Helpers</a></li>
+                                <li><a class="dropdown-item" href="clase9.html">Clase: Utilidades</a></li>
+                            </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyectofinal.html">Proyecto Final</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-5">
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-10">
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h1 class="text-primary">Formularios</h1>
+                <p>Ejemplos y guía de uso de control de estilos para los formularios, opciones de modificación y creación de una variedad de amplios formularios.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container clearfix">
+            <p class="text-success">Ejemplo de lo que se puede lograr utilizando Bootstrap.</p>
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form>
+                        <div class="mx-2 my-2">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mx-2 my-2">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mx-2 my-2 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mx-2 my-2">Submit</button>
+                    </form> 
+                </div>
+            </div>
+        </div>  
+    </section>
+
+
+    <section>   
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Texto en los Formularios</h3>
+                <p>En formularios en bloque o en linea se puede crear texto usando la clase .form-text el cual aparecera debajo del formulario en bloque o en linea y se le agregara un espaciado del input.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form>
+                        <p class="bold">En bloque</p>
+                        <label for="inputPassword5" class="form-label mx-2 my-1">Password</label>
+                        <input type="password" id="inputPassword5" class="form-control mx-2 my-1" aria-describedby="passwordHelpBlock">
+                        <div id="passwordHelpBlock" class="form-text mx-2 my-1">
+                        Su contraseña debe ser de una longuitud de 8-20 caracteres, conteniendo letras y números, no debe tener espacios, emojis ni carácteres especiales.
+                        </div>
+                    </form> 
+                    <form>
+                        <p class="bold">En Línea</p>
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto mx-2 my-1">
+                            <label for="inputPassword6" class="col-form-label">Password</label>
+                            </div>
+                            <div class="col-auto mx-2 my-1">
+                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                            </div>
+                            <div class="col-auto mx-2 my-1">
+                            <span id="passwordHelpInline" class="form-text">
+                                Must be 8-20 characters long.
+                            </span>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <h3 class="text-success">Desabilitar formularios</h3>
+                <p>Se agrega la clase .disabled en la etiqueta fielset para deshabilitar el formulario que contiene.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form>
+                        <fieldset disabled>
+                        <legend class="mx-2 my-1">Disabled fieldset example</legend>
+                        <div class="mx-2 my-1">
+                            <label for="disabledTextInput" class="form-label mx-2 my-1">Disabled input</label>
+                            <input type="text" id="disabledTextInput" class="form-control mx-2 my-1" placeholder="Disabled input">
+                        </div>
+                        <div class="mx-2 my-1">
+                            <label for="disabledSelect" class="form-label mx-2 my-1">Disabled select menu</label>
+                            <select id="disabledSelect" class="form-select mx-2 my-1">
+                            <option>Disabled select</option>
+                            </select>
+                        </div>
+                        <div class="mx-2 my-1">
+                            <div class="form-check">
+                            <input class="form-check-input mx-2 my-1" type="checkbox" id="disabledFieldsetCheck" disabled>
+                            <label class="form-check-label mx-2 my-1" for="disabledFieldsetCheck">
+                                Can't check this
+                            </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mx-2 my-1">Submit</button>
+                        </fieldset>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h1 class="text-primary">Controles de Formularios</h1>
+                <p>Ejemplo:</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form>
+                        <div class="mx-2 my-1">
+                            <label for="exampleFormControlInput1" class="form-label mx-2 my-1">Email address</label>
+                            <input type="email" class="form-control mx-2 my-1" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="mx-2 my-1">
+                            <label for="exampleFormControlTextarea1" class="form-label mx-2 my-1">Example textarea</label>
+                            <textarea class="form-control mx-2 my-1 mb-2" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Tamaño</h3>
+                <p>Fijar tamaños usando clases como: .form-control-lg o .form-control-sm</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form>
+                        <input class="form-control form-control-lg mx-2 my-2" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                        <input class="form-control mx-2 my-2" type="text" placeholder="Default input" aria-label="default input example">
+                        <input class="form-control form-control-sm mx-2 my-2" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Deshabilitar</h3>
+                <p>Agregar clase .disabled en un input para darle una apariencia en específico y remover eventos del puntero.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form>
+                        <input class="form-control mx-2 my-2" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+                        <input class="form-control mx-2 my-2" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Solo lectura</h3>
+                <p>Agregar clase .readonly en un input para prevenir la modificación del valor ingresado.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form>
+                        <input class="form-control mx-2 my-2" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Solo lectura con texto plano</h3>
+                <p>Si quieres un elemento en tu formulario con texto plano debes agregar la clase .form-control-plaintext para romover el campo de llenado preestablecido de los formularios.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form>
+                        <div class="mx-2 my-2 row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label mx-2 my-2">Email</label>
+                            <div class="col-sm-10 mx-2 my-2">
+                              <input type="text" readonly class="form-control-plaintext mx-2 my-2 text-light" id="staticEmail" value="email@example.com">
+                            </div>
+                          </div>
+                          <div class="mx-2 my-2 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label mx-2 my-2">Password</label>
+                            <div class="col-sm-10 mx-2 my-2">
+                              <input type="password" class="form-control mx-2 my-2" id="inputPassword">
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Carga de Archivos</h3>
+                <p>Ejemplos:</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Default file input example</label>
+                            <input class="form-control" type="file" id="formFile">
+                          </div>
+                          <div class="mb-3">
+                            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                          </div>
+                          <div class="mb-3">
+                            <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+                            <input class="form-control" type="file" id="formFileDisabled" disabled>
+                          </div>
+                          <div class="mb-3">
+                            <label for="formFileSm" class="form-label">Small file input example</label>
+                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                          </div>
+                          <div>
+                            <label for="formFileLg" class="form-label">Large file input example</label>
+                            <input class="form-control form-control-lg" id="formFileLg" type="file">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Seleccionador de colores</h3>
+                <p>Ejemplos:</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <label for="exampleColorInput" class="form-label">Color picker</label>
+                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Seleccionador en listas de datos</h3>
+                <p>Permite crear un grupo de opciones que pueden ser accesadas y que autocompletan el ingreso de datos.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <label for="exampleDataList" class="form-label">Datalist example</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                        <datalist id="datalistOptions">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h1 class="text-primary">Selección</h1>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Selección por defecto</h3>
+                <p>Los menús de selección modificados únicamente necesitan la clase .form-select para desencadenar los estilos</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Tamaño de Selector</h3>
+                <p>También se pueden seleccionar los tamaños de los selectores escogiendo entre los distintos breakpoints</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>                        
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Deshabilitar el Selector</h3>
+                <p>Se puede deshabilitar el selector.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <select class="form-select" aria-label="Disabled select example" disabled>
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h1 class="text-primary">Checks y Radios</h1>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Checks</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Checked checkbox
+                            </label>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Deshabilitar checks</h3>
+                <p>Se puede deshabilitar el check.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+                            <label class="form-check-label" for="flexCheckDisabled">
+                              Disabled checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+                            <label class="form-check-label" for="flexCheckCheckedDisabled">
+                              Disabled checked checkbox
+                            </label>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Interruptores</h3>
+                <p>Los interruptores son checkbox modificadas utilizando la clase .form-switch.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+                            <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Encajadas por defecto</h3>
+                <p>Por defecto cualquier número de checkboxes y radios que estan hermandas van a ser encajadas de forma vertical automáticamente y espaciadas apropiadamente.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                            <label class="form-check-label" for="defaultCheck2">
+                              Disabled checkbox
+                            </label>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                              Default radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                              Second default radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                            <label class="form-check-label" for="exampleRadios3">
+                              Disabled radio
+                            </label>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Encajadas en línea</h3>
+                <p>Un número de checkboxes y radios que estan hermandas van a ser encajadas de forma horizontal automáticamente y espaciadas apropiadamente se utiliza la clase .form-check-inline.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                            <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Checks y Radios sin etiquetas</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div>
+                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                        </div> 
+                        <div>
+                            <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Botones Toggle</h3>
+                <p>Se puede crear un botón que funcione como checkbox y radio usando las etiquetas .btn y .form-check-label</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                        <label class="btn btn-primary" for="btn-check">Single toggle</label>
+                    </form> 
+                    <form class="mx-2 my-2">
+                        <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+                        <label class="btn btn-primary" for="btn-check-2">Checked</label>
+                    </form>
+                    <form class="mx-2 my-2">
+                        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                        <label class="btn btn-primary" for="btn-check">Single toggle</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option1">Checked</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                        <label class="btn btn-secondary" for="option2">Radio</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+                        <label class="btn btn-secondary" for="option3">Disabled</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                        <label class="btn btn-secondary" for="option4">Radio</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Botones con estilo delineado</h3>
+                <p>Diferentes variantes de la etiqueta .btn</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label><br>
+
+                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                        <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
+
+                        <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                        <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h1 class="text-primary">Rangos</h1>
+                <p>Ejemplo:</p>
+            </div>
+        </div>
+    </section>  
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <label for="customRange1" class="form-label">Example range</label>
+                        <input type="range" class="form-range" id="customRange1">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Rango deshabilitado</h3>
+                <p>Deshabilita la opción de Rango.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <label for="disabledRange" class="form-label">Disabled range</label>
+                        <input type="range" class="form-range" id="disabledRange" disabled>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Minimo y Máximo</h3>
+                <p>El ingreso del dato implica valores minimos y máximos de 0 a 100 de Rango.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <label for="customRange2" class="form-label">Example range</label>
+                        <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Rango por pasos</h3>
+                <p>Por defecto el rango de ingreso es un valor entero, pero esto se puede modificar específicandolo por medio de la clase .step="o.5".</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <label for="customRange3" class="form-label">Example range</label>
+                        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h1 class="text-primary">Suma de datos a los datos ingresados</h1>
+                <p>Ejemplo:</p>
+            </div>
+        </div>
+    </section>  
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>                        
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@example.com</span>
+                        </div>                        
+                        <label for="basic-url" class="form-label">Your vanity URL</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>                          
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">.00</span>
+                        </div>                          
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                        </div>                         
+                        <div class="input-group">
+                            <span class="input-group-text">With textarea</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Tamaño</h3>
+                <p>Agregando los tamaños relativos a la clase .imput-group hará que automáticamente se modifique el tamaño.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                          </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Cajas de Check y Radios</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with checkbox">
+                        </div> 
+                        <div class="input-group">
+                            <div class="input-group-text">
+                              <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with radio button">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Multiples inputs</h3>
+                <p>Mientras los multiple inputs son soportados de manera visula, la validación de los mismos se hace de manera individual.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="input-group">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" aria-label="First name" class="form-control">
+                            <input type="text" aria-label="Last name" class="form-control">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Multiples complementos</h3>
+                <p>Múltiple complementos son soportados y pueden ser combinados con inputs de cajas de checks y radios.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <span class="input-group-text">0.00</span>
+                            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                            <span class="input-group-text">$</span>
+                            <span class="input-group-text">0.00</span>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Multiples Botones</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                        </div>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                            <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Botones con desplegables</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                        </div>
+                          
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                          
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action before</a></li>
+                              <li><a class="dropdown-item" href="#">Another action before</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                            <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Botones segmentados</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="input-group mb-3">
+                            <button type="button" class="btn btn-outline-secondary">Action</button>
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                            <button type="button" class="btn btn-outline-secondary">Action</button>
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Selectores modificados</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+                          
+                        <div class="input-group mb-3">
+                            <select class="form-select" id="inputGroupSelect02">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                        </div>
+                          
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                            <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                        </div>
+                          
+                        <div class="input-group">
+                            <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Etiquetas Flotantes -->
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h1 class="text-primary">Etiquetas flotantes</h1>
+                <p>Ejemplo:</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                    </form> 
+                    <form class="mx-2 my-2">
+                        <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
+                        <label for="floatingInputValue">Input with value</label>
+                    </form>
+                    <form class="mx-2 my-2">
+                        <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+                        <label for="floatingInputInvalid">Invalid input</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Áreas de texto</h3>
+                <p>Por defecto, las áreas de texto con clase .form-control van a ser de la misma altura del input.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Comments</label>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Selecciones</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Works with selects</label>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Diseños</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="row g-2">
+                            <div class="col-md">
+                              <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+                                <label for="floatingInputGrid">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                  <option selected>Open this select menu</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelectGrid">Works with selects</label>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Diseños -->
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h1 class="text-primary">Diseños</h1>
+                <p>Le da a los formularios estructura. Desde en línea, horizonta, vertical hasta modificaciones de implementaciones del grid</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Utilidades</h3>
+                <p>Las utilidades de margen son la manera más fácil de agregar alguna estructura a los formularios.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Example label</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Another label</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Formularios con Grid</h3>
+                <p>Formularios más complejos pueden ser construidos usando la clase Grid.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Gutters</h3>
+                <p>Sumando las clases modificadas de Gutters, se puede controlar el ancho y la dirección de los bloques y los en linea.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="mx-2 my-2">
+                        <div class="row g-3">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="row g-3 mx-2 my-2">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">State</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Formularios Horizontales</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class= "mx-2 my-2">
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3">
+                          </div>
+                        </div>
+                        <fieldset class="row mb-3">
+                          <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                First radio
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                              <label class="form-check-label" for="gridRadios2">
+                                Second radio
+                              </label>
+                            </div>
+                            <div class="form-check disabled">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                              <label class="form-check-label" for="gridRadios3">
+                                Third disabled radio
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <div class="row mb-3">
+                          <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck1">
+                              <label class="form-check-label" for="gridCheck1">
+                                Example checkbox
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Formularios Horizontales con etiquetas</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class= "mx-2 my-2">
+                        <div class="row mb-3">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Tamaño de Columnas</h3>
+                <p>Como se ha mostrado anteriormente, el sistema de Grid permite colocar cualquier número de columnas</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class= "mx-2 my-2">
+                        <div class="row g-3">
+                            <div class="col-sm-7">
+                              <input type="text" class="form-control" placeholder="City" aria-label="City">
+                            </div>
+                            <div class="col-sm">
+                              <input type="text" class="form-control" placeholder="State" aria-label="State">
+                            </div>
+                            <div class="col-sm">
+                              <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Auto asignación de tamaño</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="row gy-2 gx-3 align-items-center mx-2 my-2">
+                        <div class="col-auto">
+                          <label class="visually-hidden" for="autoSizingInput">Name</label>
+                          <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+                        </div>
+                        <div class="col-auto">
+                          <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                          <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                          <select class="form-select" id="autoSizingSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                            <label class="form-check-label" for="autoSizingCheck">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Formularios en Línea</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="row row-cols-lg-auto g-3 align-items-center mx-2 my-2">
+                        <div class="col-12">
+                          <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                          <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                          </div>
+                        </div>
+                      
+                        <div class="col-12">
+                          <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                          <select class="form-select" id="inlineFormSelectPref">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                            <label class="form-check-label" for="inlineFormCheck">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                      
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Validación -->
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h1 class="text-primary">Validación</h1>
+                <p>Provee retroalimentación a los usuarios con formularios de validación.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Estilos Modificadoss</h3>
+                <p>Se pueden deshabilitar las herramientas de retroalimentación utilizando la clase .novalidate.</p>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="row g-3 needs-validation mx-2 my-2" novalidate>
+                        <div class="col-md-4">
+                          <label for="validationCustom01" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationCustom02" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationCustomUsername" class="form-label">Username</label>
+                          <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                              Please choose a username.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationCustom03" class="form-label">City</label>
+                          <input type="text" class="form-control" id="validationCustom03" required>
+                          <div class="invalid-feedback">
+                            Please provide a valid city.
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationCustom04" class="form-label">State</label>
+                          <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationCustom05" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="validationCustom05" required>
+                          <div class="invalid-feedback">
+                            Please provide a valid zip.
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                              Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                              You must agree before submitting.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Defectos de browsers</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="row g-3 mx-2 my-2">
+                        <div class="col-md-4">
+                          <label for="validationDefault01" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationDefault02" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationDefaultUsername" class="form-label">Username</label>
+                          <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationDefault03" class="form-label">City</label>
+                          <input type="text" class="form-control" id="validationDefault03" required>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationDefault04" class="form-label">State</label>
+                          <select class="form-select" id="validationDefault04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationDefault05" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="validationDefault05" required>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Agree to terms and conditions
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Server side</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="row g-3 mx-2 my-2">
+                        <div class="col-md-4">
+                          <label for="validationServer01" class="form-label">First name</label>
+                          <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationServer02" class="form-label">Last name</label>
+                          <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationServerUsername" class="form-label">Username</label>
+                          <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                              Please choose a username.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationServer03" class="form-label">City</label>
+                          <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                          <div id="validationServer03Feedback" class="invalid-feedback">
+                            Please provide a valid city.
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationServer04" class="form-label">State</label>
+                          <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                          </select>
+                          <div id="validationServer04Feedback" class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationServer05" class="form-label">Zip</label>
+                          <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                          <div id="validationServer05Feedback" class="invalid-feedback">
+                            Please provide a valid zip.
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="invalidCheck3">
+                              Agree to terms and conditions
+                            </label>
+                            <div id="invalidCheck3Feedback" class="invalid-feedback">
+                              You must agree before submitting.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Elementos soportados</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="was-validated mx-2 my-2">
+                        <div class="mb-3">
+                          <label for="validationTextarea" class="form-label">Textarea</label>
+                          <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                          <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                          </div>
+                        </div>
+                      
+                        <div class="form-check mb-3">
+                          <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                          <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
+                          <div class="invalid-feedback">Example invalid feedback text</div>
+                        </div>
+                      
+                        <div class="form-check">
+                          <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                          <label class="form-check-label" for="validationFormCheck2">Toggle this radio</label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                          <label class="form-check-label" for="validationFormCheck3">Or toggle this other radio</label>
+                          <div class="invalid-feedback">More example invalid feedback text</div>
+                        </div>
+                      
+                        <div class="mb-3">
+                          <select class="form-select" required aria-label="select example">
+                            <option value="">Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <div class="invalid-feedback">Example invalid select feedback</div>
+                        </div>
+                      
+                        <div class="mb-3">
+                          <input type="file" class="form-control" aria-label="file example" required>
+                          <div class="invalid-feedback">Example invalid form file feedback</div>
+                        </div>
+                      
+                        <div class="mb-3">
+                          <button class="btn btn-primary" type="submit" disabled>Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-start">
+              <div class="col-11">
+                <h3 class="text-success">Herramientas</h3>
+            </div>
+        </div>
+    </section> 
+
+    <section>
+        <div class="container clearfix">
+            <div class="col-11 border border-success">
+                <div class="col-10">
+                    <form class="row g-3 needs-validation mx-2 my-2" novalidate>
+                        <div class="col-md-4 position-relative">
+                          <label for="validationTooltip01" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                          <div class="valid-tooltip">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4 position-relative">
+                          <label for="validationTooltip02" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+                          <div class="valid-tooltip">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4 position-relative">
+                          <label for="validationTooltipUsername" class="form-label">Username</label>
+                          <div class="input-group has-validation">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                            <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                            <div class="invalid-tooltip">
+                              Please choose a unique and valid username.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 position-relative">
+                          <label for="validationTooltip03" class="form-label">City</label>
+                          <input type="text" class="form-control" id="validationTooltip03" required>
+                          <div class="invalid-tooltip">
+                            Please provide a valid city.
+                          </div>
+                        </div>
+                        <div class="col-md-3 position-relative">
+                          <label for="validationTooltip04" class="form-label">State</label>
+                          <select class="form-select" id="validationTooltip04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                          </select>
+                          <div class="invalid-tooltip">
+                            Please select a valid state.
+                          </div>
+                        </div>
+                        <div class="col-md-3 position-relative">
+                          <label for="validationTooltip05" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="validationTooltip05" required>
+                          <div class="invalid-tooltip">
+                            Please provide a valid zip.
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="row bg-success mt-5">
+        <div class="col-5">
+          <p class="ms-5">Ronald Humberto Solano Gutiérrez</p>
+        </div>
+        <div class="col-5">
+        </div>
+        <div class="col-2">
+          2022
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase #4: Columnas y Gutters</title>
+</head>
+
+
+<body class="bg-dark text-light">
+  
+  <header class="mb-5 clearfix">
+    <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand border rounded border border-light bg-opacity-50 bold" style="background-color: #e3f2fd;" href="#">Proyectos Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Proyectos</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Proyecto 1
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="clase3.html">Clase: Grid y Breakpoints</a></li>
+                  <li><a class="dropdown-item" href="clase5.html">Clase: Reboot e Imagenes</a></li>
+                  <li><a class="dropdown-item" href="clase6.html">Clase: Tablas</a></li>
+                  <li><a class="dropdown-item" href="clase7.html">Clase: Formularios</a></li>
+                  <li><a class="dropdown-item" href="clase8.html">Clase: Helpers</a></li>
+                  <li><a class="dropdown-item" href="clase9.html">Clase: Utilidades</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="proyectofinal.html">Proyecto Final</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="mt-5">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-10">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Presentación Breakpoints -->
+  <section class="mt-5">
+    <div class="container">
+      <div class="row justify-content-start mx-2 my-1">
+        <div class="col-10">
+            <h1 class="text-primary">Columnas</h1>
+            <p class="container-sm">Las columnas puede ser moficadas de distintas maneras: En su alineamiento, orden y modificando los anchos de elementos de tipo no-grid.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Ejemplos de ejercicios con Columnas -->
+  <section>
+    <div class="container">
+      <h3 class="text-success">Alineamiento de columnas.</h3>
+      <p class="text-success mt-5">Alineamiento vertical.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container">
+          <div class="row align-items-start mx-2 my-1">
+            <div class="col border border-ligth">
+              One of three columns
+            </div>
+            <div class="col border border-ligth">
+              One of three columns
+            </div>
+            <div class="col border border-ligth">
+              One of three columns
+            </div>
+          </div>
+
+          <div class="row align-items-center mx-2 my-1">
+            <div class="col border border-ligth">
+              One of three columns
+            </div>
+            <div class="col border border-ligth">
+              One of three columns
+            </div>
+            <div class="col border border-ligth">
+              One of three columns
+            </div>
+          </div>
+
+          <div class="row align-items-end mx-2 my-1">
+            <div class="col border border-ligth">
+              One of three columns
+            </div>
+            <div class="col border border-ligth">
+              One of three columns
+            </div>
+            <div class="col border border-ligth">
+              One of three columns
+            </div>            
+          </div>
+
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Alineamiento vertical.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container">
+          <div class="row mx-2 my-1">
+            <div class="col align-self-start border border-ligth">
+              One of three columns
+            </div>
+            <div class="col align-self-center border border-ligth">
+              One of three columns
+            </div>
+            <div class="col align-self-end border border-ligth">
+              One of three columns
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Alineamiento vertical.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container">
+          <div class="row justify-content-start mx-2 my-1">
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+          </div>
+          <div class="row justify-content-center mx-2 my-1">
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+          </div>
+          <div class="row justify-content-end mx-2 my-1">
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+          </div>
+          <div class="row justify-content-around mx-2 my-1">
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+          </div>
+          <div class="row justify-content-between mx-2 my-1">
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+          </div>
+          <div class="row justify-content-evenly mx-2 my-1">
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+            <div class="col-4 border border-ligth">
+              One of two columns
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Envolviendo columnas.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container">
+          <div class="row mx-2 my-1">
+            <div class="col-9 border border-ligth">.col-9</div>
+            <div class="col-4 border border-ligth">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+            <div class="col-6 border border-ligth">.col-6<br>Subsequent columns continue along the new line.</div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Rompimiento de columnas.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container">
+          <div class="row mx-2 my-1">
+            <div class="col-6 col-sm-3 border border-ligth">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3 border border-ligth">.col-6 .col-sm-3</div>
+        
+            <!-- Force next columns to break to new line -->
+            <div class="w-100 mx-2 my-1"></div>
+        
+            <div class="col-6 col-sm-3 border border-ligth">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3 border border-ligth">.col-6 .col-sm-3</div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Reordenar columnas.</p>
+      <p>Se puede realizar de distinta forma. La primera de ellas es asignandole ubicaciones del 1 a 6 con el sufijo order-#. La segunda es colocandolos de primero o últimos con los sufijos: .order-first y .order-last, esta clase puede mezclarse con la primera asignadole números.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container">
+          <div class="row mx-2 my-1">
+            <div class="col border border-ligth">
+              First in DOM, no order applied
+            </div>
+            <div class="col order-5 border border-ligth">
+              Second in DOM, with a larger order
+            </div>
+            <div class="col order-1 border border-ligth">
+              Third in DOM, with an order of 1
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Clases Offset.</p>
+      <p>Se pueden generar columnas de contrapeso, estas son columnas con tamaños específicos, pero que no son visualizadas en la página web, se utiliza para generar espacios equidistantes antes de la columna o columnas que si se quieren mostras.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container">
+          <div class="row mx-2 my-1">
+            <div class="col-md-4 border border-ligth">.col-md-4</div>
+            <div class="col-md-4 offset-md-4 border border-ligth">.col-md-4 .offset-md-4</div>
+          </div>
+          <div class="row mx-2 my-1">
+            <div class="col-md-3 offset-md-3 border border-ligth">.col-md-3 .offset-md-3</div>
+            <div class="col-md-3 offset-md-3 border border-ligth">.col-md-3 .offset-md-3</div>
+          </div>
+          <div class="row mx-2 my-1">
+            <div class="col-md-6 offset-md-3 border border-ligth">.col-md-6 .offset-md-3</div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Se pueden utilizar Breakpoints para que las columnas sufran variaciones al momento de usar diseños respopnsive.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container">
+          <div class="row mx-2 my-1">
+            <div class="col-sm-5 col-md-6 border border-ligth">.col-sm-5 .col-md-6</div>
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 border border-ligth">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+          </div>
+          <div class="row mx-2 my-1">
+            <div class="col-sm-6 col-md-5 col-lg-6 border border-ligth">.col-sm-6 .col-md-5 .col-lg-6</div>
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 border border-ligth">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Utilidades de margenes.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container">
+          <div class="row mx-2 my-1">
+            <div class="col-md-4 border border-ligth">.col-md-4</div>
+            <div class="col-md-4 ms-auto border border-ligth">.col-md-4 .ms-auto</div>
+          </div>
+          <div class="row mx-2 my-1">
+            <div class="col-md-3 ms-md-auto border border-ligth">.col-md-3 .ms-md-auto</div>
+            <div class="col-md-3 ms-md-auto border border-ligth">.col-md-3 .ms-md-auto</div>
+          </div>
+          <div class="row mx-2 my-1">
+            <div class="col-auto me-auto border border-ligth">.col-auto .me-auto</div>
+            <div class="col-auto border border-ligth">.col-auto</div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Standalone column classes.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="col-3 bg-light p-3 border text-dark mx-2 my-1">
+          .col-3: width of 25%
+        </div>
+        <div class="col-sm-9 bg-light p-3 border text-dark mx-2 my-1">
+          .col-sm-9: width of 75% above sm breakpoint
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Para usar imagenes flotantes.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class= "border border-dark mx-2 my-1">
+          <div class="clearfix">
+              <img src="asserts/posi.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="posibilidad">
+          
+              <p>
+              A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+              </p>
+          
+              <p>
+              As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+              </p>
+          
+              <p>
+              And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <!-- Presentación Gutters -->
+  <section class="mt-5">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-10">
+            <h1 class="text-primary">Gutters</h1>
+            <p class="container-sm">Los Gutters son relleno entre las columnas, usado para asignar espacio y alineamientoal contenido en páginas responsive.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Ejemplos de ejercicios con Columnas -->
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Gutter Horizontales.</p>
+      <p>Se usa las clases -gx-#</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container px-4 mx-2 my-1">
+          <div class="row gx-5">
+            <div class="col">
+             <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Gutter Verticales.</p>
+      <p>Se usa las clases -gy-#</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container overflow-hidden mx-2 my-1">
+          <div class="row gy-5">
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Gutter Horizontales y Verticales.</p>
+      <p>Se usa las clases -g-#</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container mx-2 my-1">
+          <div class="row g-2">
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Hileras de columnas con Gutter.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container mx-2 my-1">
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col">
+              <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Row column</div>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container">
+      <p class="text-success mt-5">Sin Gutter.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="row g-0">
+          <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <footer class="row bg-success mt-5">
+    <div class="col-5">
+      <p class="ms-5">Ronald Humberto Solano Gutiérrez</p>
+    </div>
+    <div class="col-5">
+    </div>
+    <div class="col-2">
+      2022
+    </div>
+  </footer>
+
+  <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

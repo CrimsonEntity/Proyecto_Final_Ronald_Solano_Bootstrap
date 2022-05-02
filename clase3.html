@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase #3: Grid y Breakpoints</title>
+</head>
+
+
+<body class="bg-dark text-light">
+  
+  <header class="mb-5 clearfix">
+    <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand border rounded border border-light bg-opacity-50 bold" style="background-color: #e3f2fd;" href="#">Proyectos Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Proyectos</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Proyecto 1
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="clase4.html">Clase: Columnas y Gutters</a></li>
+                  <li><a class="dropdown-item" href="clase5.html">Clase: Reboot e Imagenes</a></li>
+                  <li><a class="dropdown-item" href="clase6.html">Clase: Tablas</a></li>
+                  <li><a class="dropdown-item" href="clase7.html">Clase: Formularios</a></li>
+                  <li><a class="dropdown-item" href="clase8.html">Clase: Helpers</a></li>
+                  <li><a class="dropdown-item" href="clase9.html">Clase: Utilidades</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="proyectofinal.html">Proyecto Final</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="mt-5">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-10">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Presentación Breakpoints -->
+  <section class="mt-5">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-10">
+            <h1 class="text-primary">Breakpoints</h1>
+            <p class="container-sm">Los Breakpoints son medidas estandar con las que cuenta bootstrap para facilitar el trabajo de los desarrolladores al momento de crear páginas responsive. Se utilizan de la siguiente manera. Según el sufijo que se utilice va a ser la medida en la que se deja de utilizar el 100% de la pantalla. Por ejemplo al utilizar -sm(small), el objeto contenido va a medir el 100% de la pantalla hasta que llegue a los 576px, en ese momento va a dejar de cumplir esta característica y va a dejar de crecer.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+        
+  <section>
+    <!-- Ejemplos de ejercicios con breakpoints -->
+    <div class="container">Va a medir el 100% de ancho de la pantalla del dispositivo hasta el punto Extra small breakpoint o none breakpoint 575px.</div>
+    <div class="container-sm">Va a medir el 100% de ancho de la pantalla del dispositivo hasta el punto small breakpoint >= 576px.</div>
+    <div class="container-md">Va a medir el 100% de ancho de la pantalla del dispositivo hasta el punto medium breakpoint >= 768px.</div>
+    <div class="container-lg">Va a medir el 100% de ancho de la pantalla del dispositivo hasta el punto large breakpoint >= 992px.</div>
+    <div class="container-xl">Va a medir el 100% de ancho de la pantalla del dispositivo hasta el punto Extra large breakpoint >= 1200px.</div>
+    <div class="container-xxl">Va a medir el 100% de ancho de la pantalla del dispositivo hasta el punto Extra extra large breakpoint >= 1400px.</div>
+    <div class="container-fluid">Va a medir el 100% de ancho de la pantalla siempre.</div>
+  </section>
+
+
+  <!-- Grid -->
+  <section class="mt-5">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-10">
+          <h1 class="text-primary">Grid</h1>
+          <p>Grid, es un sistema de cuadrículas con la cual se pueden crear diseños de todas las formas y tamaños que utiliza un sistema de 12 columnas.</p>
+          <p>En este primer ejemplo se puede observar como las columnas se adpatan automáticamente al tamaño de la pantalla, tomando siempre el 100% de la misma y dividiendolo entre la cantidad de columnas que ingresemos, teniendo como limite las 12 columnas arriba mencionadas.</p>
+          <p>Los Grid, tiene varias carácteristicas.</p>
+        <ol>
+          <li>Se le pueden aplicar breakpoints.</li>
+          <li>Los contenedores se van a centrar y poner de forma horizontal su contenido.</li>
+          <li>La clase "row" sirve para envolver las columnas, siendo su máximo 12 columnas.</li>
+          <li>Las columnas permiten una gran flexibilidad, permite asignar un tamaño a las columnas utilizando "col-#"</li>
+        </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container clearfix">
+      <p class="text-success mt-5">Ejemplo de ancho equidistante.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container mx-2 my-1">
+          <div class="row">
+            <div class="col border border-2 border-ligth">
+              Columna 1 de 3
+            </div>
+            <div class="col border border-2 border-ligth">
+              Columna 2 de 3
+            </div>
+            <div class="col border border-2 border-ligth">
+              Columna 3 de 3
+            </div>
+          </div>
+        </div>
+        <div class="container mx-2 my-1">
+          <div class="row">
+            <div class="col border border-2 border-ligth">
+              Columna 1 de 2
+            </div>
+            <div class="col border border-2 border-ligth">
+              Columna 2 de 2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <section>
+    <div class="container clearfix">
+      <p class="text-success mt-5">Ejemplo de asignación de ancho a una sola columna.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container mx-2 my-1">
+          <div class="row">
+            <div class="col border border-2 border-ligth">
+              Columna 1 de 3
+            </div>
+            <div class="col-7 border border-2 border-ligth">
+              Columna 2 de 3
+            </div>
+            <div class="col border border-2 border-ligth">
+              Columna 3 de 3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <section>
+    <div class="container clearfix">
+      <p class="text-success mt-5">Ejemplo de contenido con ancho variable según la dimensión de la pantalla.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container mx-2 my-1">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-2 border border-2 border-ligth">
+              Columna 1 de 3 con tamaño 2
+            </div>
+            <div class="col-md-auto border border-2 border-ligth">
+              Columna 2 de 3 con tamaño automatico hasta medium
+            </div>
+            <div class="col col-lg-2 border border-2 border-ligth">
+              Columna 3 de 3 con tamaño 2
+            </div>
+          </div>
+        </div>
+        <div class="row mx-2 my-1">
+            <div class="col border border-2 border-ligth">
+              Columna 1 de 3 toma el tamaño que reste de los otros dos
+            </div>
+            <div class="col-md-auto border border-2 border-ligth">
+              Columna 2 de 3 con tamaño automatico hasta medium
+            </div>
+            <div class="col col-lg-2 border border-2 border-ligth">
+              Columna 3 de 3 con tamaño 2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container clearfix">
+      <p class="text-success mt-5">Ejemplo de contenido con ancho asignado por el desarrollador.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="row mx-2 my-1">
+          <div class="col-7 border border-2 border-ligth">columna tamaño 7</div>
+          <div class="col-5 border border-2 border-ligth">columna tamaño 5</div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container clearfix">
+      <p class="text-success mt-5">Ejemplo de contenido Apilado en horizontal. En este caso se combina el breakpoint junto con anchos asignados.</p>
+      <div class="col-11 border border-5 border-success">
+        <p>En el primer caso las columnas van a abarcar el 100% de la pantalla, pero cuando el breakpoint asignado sea superado van a medir el número indicado, en este caso 8 y 4</p>
+        <div class="container mx-2 my-1">
+          <div class="row">
+            <div class="col-sm-8 border border-2 border-ligth">100% hasta breakpoint sm y luego tamaño 8</div>
+            <div class="col-sm-4 border border-2 border-ligth">100% hasta breakpoint sm y luego tamaño 4</div>
+        </div>
+        <p>En el segundo caso las columnas van a abarcar el 100% de la pantalla, pero cuando el breakpoint asignado sea superado se van a acomodar equitativamente, ya que no se le dió ninguna indicación o medida específica.</p>
+        <div class="row mx-2 my-1">
+            <div class="col-sm border border-2 border-ligth">col-sm</div>
+            <div class="col-sm border border-2 border-ligth">col-sm</div>
+            <div class="col-sm border border-2 border-ligth">col-sm</div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container clearfix">
+      <p class="text-success mt-5">Ejemplo de filas y columnas.</p>
+      <div class="col-11 border border-5 border-success"> 
+        <div class="container mx-2 my-1">
+          <div class="row row-cols-2">
+            <div class="col border border-2 border-ligth">Columna</div>
+            <div class="col border border-2 border-ligth">Columna</div>
+            <div class="col border border-2 border-ligth">Columna</div>
+            <div class="col border border-2 border-ligth">Columna</div>
+          </div>
+        </div>
+
+        <div class="container mx-2 my-1">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col border border-ligth">Columna</div>
+            <div class="col border border-ligth">Columna</div>
+            <div class="col border border-ligth">Columna</div>
+            <div class="col border border-ligth">Columna</div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <section>
+    <div class="container clearfix">
+      <p class="text-success mt-5">Ejemplo de anidado de columnas.</p>
+      <div class="col-11 border border-5 border-success">
+        <div class="container mx-2 my-1">
+          <div class="row">
+            <div class="col-sm-3 border border-ligth">
+              Nivel 1: .col-sm-3
+            </div>
+            <div class="col-sm-9 border border-ligth">
+              <div class="row">
+                <div class="col-8 col-sm-6 border border-ligth">
+                  Nivel 2: .col-8 .col-sm-6
+                </div>
+                <div class="col-4 col-sm-6 border border-ligth">
+                  Nivel 2: .col-4 .col-sm-6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+
+  <footer class="row bg-success mt-5">
+      <div class="col-5">
+        <p class="ms-5">Ronald Humberto Solano Gutiérrez</p>
+      </div>
+      <div class="col-5">
+      </div>
+      <div class="col-2">
+        2022
+      </div>
+  </footer>
+
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
